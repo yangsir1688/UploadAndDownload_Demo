@@ -1,0 +1,10 @@
+-- 资源
+drop  table if exists  source;
+create  table  source(
+  id int  primary  key auto_increment,
+  author varchar (50) ,
+  sourceName varchar (50) not  null   ,
+  sourcePath varchar (800) not  null ,
+  downCount int default  0,
+  createTime timestamp  default  current_timestamp()
+);
